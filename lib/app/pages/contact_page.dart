@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import '../widgets/custom_drawer.dart';
 import '../widgets/custom_bottom_nav.dart';
 
-class AboutPage extends StatelessWidget {
-  const AboutPage({super.key});
+class ContactPage extends StatelessWidget {
+  const ContactPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'About Page',
+          'Contact Page',
           style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w600),
         ),
         backgroundColor: Colors.pinkAccent,
@@ -19,11 +19,11 @@ class AboutPage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(Icons.info, size: 100, color: Colors.pinkAccent),
-            const SizedBox(height: 20),
-            const Text(
-              'Tentang Aplikasi Ini',
+          children: const [
+            Icon(Icons.contact_mail, size: 100, color: Colors.pinkAccent),
+            SizedBox(height: 20),
+            Text(
+              'Hubungi Kami',
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -31,15 +31,15 @@ class AboutPage extends StatelessWidget {
                 color: Colors.pinkAccent,
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
               child: Text(
-                'Aplikasi ini dibuat menggunakan Flutter + GetX sebagai contoh state management dan navigasi.\n\nNama: Revalina Fidiya Anugrah\nNIM: H1D023011',
+                'Email: revalinafidiyaanugrah@gmail.com\nTelepon: +62 1234 5678 910\nAlamat: Kalimanah, Purbalingga, Jawa Tengah',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                   fontFamily: 'Poppins',
-                  height: 1.5,
+                  height: 1.6,
                 ),
               ),
             ),

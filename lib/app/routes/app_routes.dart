@@ -7,7 +7,7 @@ class AppRoutes {
   static const about = '/about';
 
   static final routes = [
-    GetPage(name: home, page: () => HomePage()),
+    GetPage(name: home, page: () => const HomePage()),
     GetPage(name: about, page: () => const AboutPage()),
   ];
 }
